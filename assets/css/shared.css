@@ -73,6 +73,15 @@ h4 {
     color: rgb(219, 104, 9);
 }
 
+@media (min-width: 1800px) {
+    h3 {
+        font-size: 50px;
+    }
+    h4 {
+        font-size: 40px;
+    }
+}
+
 @media (max-width: 400px) {
     .collapse-grid {
         margin-left: 25%;
