@@ -1,0 +1,63 @@
+.sharedhtml {
+    background-color: rgb(219, 104, 9);
+}
+
+h1 {
+    font-size:80px;
+    color:white;
+}
+
+h2 {
+    font-size:30px;
+    color:white;
+}
+
+h3 {
+    font-size: 60px;
+}
+
+h4 {
+    font-family:'Helvetica Light';
+    font-weight: normal;
+    font-size: 40px;
+}
+
+.receive-btn-container h3, h4, p {
+    color: rgb(209, 74, 40);
+}
+
+.collapsible {
+    background-color: white;
+    cursor: pointer;
+    border: none;
+    text-align: left;
+    width: 100%;
+    padding: 3% 5%;
+    outline: none;
+    margin-top: 2%;
+}
+
+.collapsible:after {
+    content: '\02795  READ MORE';
+    font-size: 15px;
+    color: rgb(209, 74, 40);
+    float: right;
+    padding-top: 2%;
+    margin-right: 5px;
+}
+
+.active:after {
+    content: "\2212  CLOSE WINDOW";
+}
+
+.page-container {
+    background-color: rgb(219, 104, 9);
+}
+
+.sidenav .close-btn {
+    color: rgb(219, 104, 9);
+}
+
+.sidenav a:hover {
+    color: rgb(219, 104, 9);
+}

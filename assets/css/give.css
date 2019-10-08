@@ -1,0 +1,43 @@
+.givecrithtml {
+    background-color: rgb(230, 83, 25);
+}
+
+.give-btn-container h3, h4, p {
+    color: brown;
+}
+
+.collapsible {
+    background-color: white;
+    cursor: pointer;
+    border: none;
+    text-align: left;
+    width: 100%;
+    padding: 3% 5%;
+    outline: none;
+    margin-top: 2%;
+}
+
+.collapsible:after {
+    content: '\02795  READ MORE';
+    font-size: 15px;
+    color: brown;
+    float: right;
+    padding-top: 2%;
+    margin-right: 5px;
+}
+
+.active:after {
+    content: "\2212  CLOSE WINDOW";
+}
+
+.page-container {
+    background-color: rgb(230, 83, 25);
+}
+
+.sidenav .close-btn {
+    color: rgb(230, 83, 25);
+}
+
+.sidenav a:hover {
+    color: rgb(230, 83, 25);
+}
