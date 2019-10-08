@@ -90,4 +90,14 @@ div.desc {
       justify-content: center;
   }
 
+  .email:link {
+      text-decoration: none;
+      color: rgb(25, 148, 230);
+  }
+
+  .email:hover {
+      text-decoration: none;
+      color:rgb(20, 99, 145);
+  }
+
 
