@@ -38,7 +38,7 @@ h4 {
 }
 
 .collapsible:after {
-    content: '\02795  READ MORE';
+    content: '+  READ MORE';
     font-size: 15px;
     color: rgb(209, 74, 40);
     float: right;
@@ -47,7 +47,7 @@ h4 {
 }
 
 .active:after {
-    content: "\2212  CLOSE WINDOW";
+    content: "-  CLOSE WINDOW";
 }
 
 .page-container {

@@ -18,7 +18,7 @@
 }
 
 .collapsible:after {
-    content: '\02795  READ MORE';
+    content: '+  READ MORE';
     font-size: 15px;
     color: rgb(20, 99, 145);
     float: right;
@@ -27,7 +27,7 @@
 }
 
 .active:after {
-    content: "\2212  CLOSE WINDOW";
+    content: "-  CLOSE WINDOW";
 }
 
 .page-container {
