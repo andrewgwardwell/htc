@@ -23,7 +23,6 @@ a {
 }
 
 p {
-    font-size: 25px;
     margin-bottom: 0%;
 }
 
@@ -72,6 +71,6 @@ div.desc {
     width: 100%;
     padding: 3% 5%;
     outline: none;
-    margin-top: 2%;
+    margin-top: 4%;
 }
 
