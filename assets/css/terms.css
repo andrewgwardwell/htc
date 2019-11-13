@@ -1,15 +1,8 @@
+@import "colors.css";
+
 .termshtml {
-    background-color: rgb(219, 104, 9);
+    background-color: var(--terms-bg-color);
 }
-
-h1 {
-    color:white;
-}
-
-h2 {
-    color:white;
-}
-
 
 h4 {
     font-family:'Helvetica Light';
@@ -17,7 +10,7 @@ h4 {
 }
 
 .receive-btn-container h3, h4, p {
-    color: rgb(209, 74, 40);
+    color: var(--terms-text-color);
 }
 
 .collapsible {
@@ -34,7 +27,7 @@ h4 {
 .collapsible:after {
     content: '+  READ MORE';
     font-size: 15px;
-    color: rgb(209, 74, 40);
+    color: var(--terms-text-color);
     float: right;
     padding-top: 2%;
     padding-right: 3%;
@@ -52,7 +45,7 @@ h4 {
 }
 
 .col:first-child {
-    border-right: 5px solid rgb(209, 74, 40);
+    border-right: 5px solid var(--terms-text-color);
     border-bottom: none;
 }
 .col {
@@ -62,15 +55,15 @@ h4 {
 }
 
 .page-container {
-    background-color: rgb(219, 104, 9);
+    background-color: var(--terms-bg-color);
 }
 
 .sidenav .close-btn {
-    color: rgb(219, 104, 9);
+    color: var(--terms-bg-color);
 }
 
 .sidenav a:hover {
-    color: rgb(219, 104, 9);
+    color: var(--terms-bg-color);
 }
 
 @media (min-width: 1800px) {
@@ -93,6 +86,6 @@ h4 {
     .col:first-child {
         padding-bottom: 3%;
         border-right: none;
-        border-bottom: 3px solid rgb(209, 74, 40);
+        border-bottom: 3px solid var(--terms-bg-color);
     }
 }

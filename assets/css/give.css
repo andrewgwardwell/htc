@@ -1,9 +1,12 @@
+@import "colors.css";
+
+
 .givecrithtml {
-    background-color: rgb(230, 83, 25);
+    background-color: var(--give-bg-color);
 }
 
 .give-btn-container h3, h4, p {
-    color: brown;
+    color: var(--give-text-color);
 }
 
 .collapsible {
@@ -31,13 +34,13 @@
 }
 
 .page-container {
-    background-color: rgb(230, 83, 25);
+    background-color: var(--give-bg-color)
 }
 
 .sidenav .close-btn {
-    color: rgb(230, 83, 25);
+    color: var(--give-bg-color);
 }
 
 .sidenav a:hover {
-    color: rgb(230, 83, 25);
+    color: var(--give-bg-color);
 }

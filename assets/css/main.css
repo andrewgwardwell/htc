@@ -1,3 +1,5 @@
+@import "colors.css";
+
 @font-face {
     font-family: 'Helvetica Light';
     font-style: normal;
@@ -77,6 +79,7 @@ p {
 }
 
 .page-container {
+    margin-top: 7%;
     padding-left: 20%;
     padding-right: 20%;
     padding-bottom: 5%;
@@ -89,7 +92,7 @@ p {
     position: fixed;
     z-index: 1;
     top: 0;
-    left: 0;
+    right: 0;
     background-color: rgb(61, 57, 57);
     overflow-x: hidden;
     transition: 0.5s;
@@ -125,18 +128,55 @@ p {
     border: none;
 }
 
+.navbar {
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    border-bottom: 4px solid black;
+}
+
+.navbar a {
+    float:left;
+    display:block;
+    color: black;
+    text-align: center;
+    padding: 1%;
+    font-family: 'Helvetica Bold';
+    font-size:30px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #5c5757;
+}
+
 .menu-btn {
     display: flex;
     font-size: 30px;
     font-family: 'Helvetica Bold';
     font-weight: normal;
-    color: white;
-    position: absolute;
+    color: black;
+    position: fixed;
+    right: 0;
     top: 0;
-    margin-top: 2%;
-    margin-left: 2%;
+    margin-top: 1%;
+    margin-right: 2%;
     cursor: pointer;
 }
+
+.email:link {
+    text-decoration: none;
+    color: var(--receive-bg-color);
+}
+
+.email:hover {
+    text-decoration: none;
+    color: var(--receive-text-color);
+}
+
 
 @media only screen and (max-width: 1200px) {
     .page-container {
@@ -187,11 +227,18 @@ p {
     }
 
     .menu-btn {
-        font-size: 30px;
+        margin-top:1%;
+        padding-top:0%;
+        font-size: 20px;
     }
 
     .sidenav a {
         font-size: 18px;
+    }
+
+    .navbar a {
+        padding: 1%;
+        font-size:20px;
     }
 }
 
@@ -222,5 +269,10 @@ p {
     .sidenav a {
         font-size: 12px;
         padding-bottom: 3%;
+    }
+
+    .navbar a {
+        padding: 3%;
+        font-size:15px;
     }
 }
