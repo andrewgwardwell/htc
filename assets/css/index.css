@@ -1,7 +1,7 @@
 @import "colors.css";
 
 html {
-    background-color: #444444;
+    background-color: var(--home-bg-color);
 }
 h1, h2, h3, h4, p {
     color: white;
@@ -57,8 +57,12 @@ div.desc {
     width: 30%;
 }
 
+.box-container {
+    padding-top: 3%;
+}
+
 .box-container h3, h4, p {
-    color: #444444;
+    color: var(--home-bg-color);
     width: 100%;
     height: auto;
 }
