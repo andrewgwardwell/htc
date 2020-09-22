@@ -1,0 +1,22 @@
+
+$container-max-widths: (
+  sm: 720px,
+  md: 800px,
+  lg: 1000px,
+  xl: 1200px
+) !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 600px,
+  md: 800px,
+  lg: 1000px,
+  xl: 1280px
+);
+
+$blue:    #008cee;
+$red:     #e50e00;
+$orange:  #ff6810;
+$green:   #39b54a;
+
+$jumbotron-padding: 3rem;
