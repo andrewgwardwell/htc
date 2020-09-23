@@ -1,0 +1,286 @@
+@font-face {
+    font-family: 'Helvetica Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Helvetica Neue Light'), url('HelveticaNeueLight.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Helvetica Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Helvetica Neue Bold'), url('HelveticaNeueBold.woff') format('woff');
+}
+
+h1, h2, h3, h4, a {
+    font-family: 'Helvetica Bold';
+    font-weight: normal;
+}
+
+html {
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 90px;
+    color: white;
+    line-height: 120%;
+    margin-bottom: 1%;
+    width: 100%;
+}
+
+h2 {
+    font-size: 30px;
+    color: white;
+    margin-top: 3%;
+    margin-bottom: 4%;
+    width: 100%;
+}
+
+h3 {
+    font-size: 50px;
+    margin: 1% 0%;
+}
+
+h4 {
+    font-size: 30px;
+    margin: 1% 0%;
+}
+
+p {
+    font-family: 'Helvetica Bold';
+    font-weight: normal;
+    font-size: 30px;
+    // padding-left: 5%;
+    // padding-right: 5%;
+    // margin-top: 0%;
+    // margin-bottom: 4%;
+}
+
+.content {
+    background-color: white;
+    max-height: 0;
+    margin-bottom: 2%;
+    overflow: hidden;
+    width: 100%;
+    transition: max-height 0.2s ease-out;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.page-container {
+    margin-top: 7%;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 5%;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    max-width: 350px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgb(61, 57, 57);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 3%;
+    padding-left: 6%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    border-bottom: 1px solid #5c5757;
+}
+
+.sidenav a:hover {
+    color: #8f8787
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 1%;
+    text-align: right;
+    font-size: 36px;
+    margin-left: 50px;
+    color: white;
+    border: none;
+}
+
+// .navbar a {
+//     float:left;
+//     display:block;
+//     color: black;
+//     text-align: center;
+//     padding: 1%;
+//     font-family: 'Helvetica Bold';
+//     font-size:30px;
+//     text-decoration: none;
+//     cursor: pointer;
+// }
+
+// .navbar a:hover {
+//     color: #5c5757;
+// }
+
+// .navbar span {
+//     float: right;
+//     display: block;
+//     color: black;
+//     text-align: right;
+//     padding: 1%;
+//     font-family: 'Helvetica Bold';
+//     font-size: 30px;
+//     cursor: pointer;
+// }
+
+// .navbar span:hover {
+//     color: #5c5757;
+// }
+
+.email:link {
+    text-decoration: none;
+    color: var(--receive-bg-color);
+}
+
+.email:hover {
+    text-decoration: none;
+    color: var(--receive-text-color);
+}
+
+
+@media only screen and (max-width: 1100px) {
+    .page-container {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    h1 {
+        width: 100%;
+    }
+
+    h2 {
+        width: 100%;
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 40px;
+    }
+    
+    h4 {
+        font-size: 25px;
+    }
+    
+    p {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .page-container {
+        margin-top: 12%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    
+    h4 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .menu-btn {
+        margin-top:1%;
+        padding-top:0%;
+        font-size: 20px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+
+    .navbar a {
+        padding: 2%;
+        font-size:20px;
+    }
+
+    .navbar span {
+        padding: 2%;
+        font-size:20px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .page-container {
+        margin-top: 15%;
+    }
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    
+    h4 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .menu-btn {
+        font-size: 16px;
+    }
+
+    .sidenav a {
+        font-size: 12px;
+        padding-bottom: 3%;
+    }
+
+    .navbar a {
+        padding: 3%;
+        font-size:15px;
+    }
+
+    .navbar a {
+        padding: 3%;
+        font-size:15px;
+    }
+}
