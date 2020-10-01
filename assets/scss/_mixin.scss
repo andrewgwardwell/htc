@@ -37,13 +37,13 @@
 
 @mixin color($background) {
 	border: solid 1px darken($background, 3%);
-	background: rgba(darken($background, 13%), .5);
+	background: rgba(darken($background, 13%), .9);
   color: mix(#fff, $background, 90%);
 	&:hover {
-    background: rgba(lighten($background, 13%), .75);
+    background: rgba(darken($background, 13%), .5);
 	}
 	&:active {
-    background: rgba(lighten($background, 13%), .75);
+    background: rgba(darken($background, 13%), .5);
 	}
 }
 

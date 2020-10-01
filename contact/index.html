@@ -1,48 +1,116 @@
 <!DOCTYPE html>
-<html lang='en' class="givecrithtml">
+<html lang='en' class="givecrithtml home">
     <head>
-        <title>How to Critique</title>
-        <link rel="stylesheet" href="assets/css/styles.css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>How to Give a Critique</title>
+        <link rel="stylesheet" href="../assets/css/styles.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     </head>
 
-    <body>
-        <div>
-            <div class="navbar">
-                <a href="index.html">HowToCritique</a>
-                <span class="menu-btn" onclick="openNav()">&#9776;</span>
+    <body class="bg-grey">
+      <nav class="navbar navbar-expand-xs navbar-light fixed-top bg-white shadow-sm">
+        <div class="container-fluid">
+          <div class="row w-100 no-gutters">
+            <div class="col-6 home-link">
+              <a href="/"><h4 class="d-inline">HowToCritique</h4></a>
             </div>
-                    <div id="nav" class="sidenav">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <a href="index.html">Home</a>
-                    <a href="terms.html">Terms of Critique</a>
-                    <a href="give.html">Give a Critique</a>
-                    <a href="receive.html">Receive a Critique</a>
-                    <a href="contact.html">Contact</a>
+            <div class="col-6 d-flex justify-content-end">
+              <a class="btn btn-danger nav-button" href="/contact">Contact</a>
+                <button class="navbar-toggler border-0 collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-close" aria-hidden="true">&times;</span>
+                </button>
             </div>
-        <div>
-            <div class="page-container">
-            <!-- Header-->
-            <h1 style="margin-bottom: 3%;color:black;">Contact</h1>
-            <section id="caption">
-                <p style="line-height: 150%;">
-                        Want to get in touch?</br> Please send your questions, comments, 
-                        and inquiries to <a href="mailto: tim.sauder@olin.edu" class="email">tim.sauder@olin.edu</a>.
-                </p>
-            </section>
-  
+          </div>
+
+            <div class="collapse navbar-collapse bg-white px-3 shadow" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/terms">Critique Vocab</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/give">Give a Critique</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/receive">Receive a Critique</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/guide">Critique Intro Guide</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </nav>
+    <div class="container-fluid my-5">
+      <div class="row my-5">
+        <div class="container my-5">
+          <div class="row">
+            <div class="col-12">
+              <div class="card bg-danger red shadow p-5">
+                <div class="row">
+
+                  <div class="card-body col-12">
+                    <div class="row d-flex align-items-center">
+                      <!-- <div class="col-12 col-md-3">
+                        <img src="/assets/icons/envelope.svg" class="card-img-top">
+                      </div> -->
+                      <div class="col-12 col-md-12">
+                        <h1 class="card-title mx-0 text-white display-1">Contact</h1> 
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <p class="card-text my-5">
+                          Want to get in touch?
+                          <br/>
+                          Please send your questions, comments, and inquiries.
+                        </p>
+                        <a href="mailto:tim.sauder@olin.edu" class="btn contact-btn mb-5 text-uppercase">
+                          <i class="fas fa-envelope"></i> 
+                          <div class="d-inline-block text-left">
+                            Email Us
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- Inner Cards -->
+
+                    <!-- Inner Cards End -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="container-fluid mt-5 footer py-4 bg-white shadow">
+      <div class="row">
+        <div class="container">
+          <div class="row py-1">
+            <div class="col-12 col-md-6 d-flex justify-content-center justify-content-lg-start">Produced in collaboration with</div>
+            <div class="col-12 col-md-6 d-flex justify-content-center justify-content-lg-end">&copy; How To Critique Kit</div>
+          </div>
+          <div class="row py-2">
+            <div class="col-12 d-flex flex-md-row flex-column align-items-center">
+              <!-- <a target="_blank" href="https://www.olin.edu/"> -->
+                <img src="../assets/icons/olin.svg" class="footer-image d-inline">
+              <!-- </a> -->
+              <i class="fas fa-plus mx-4"></i>
+              <img src="../assets/icons/return_design.svg" class="footer-image d-inline">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-        <script>
-            function openNav() {
-                document.getElementById("nav").style.width= "30%";
-            }
-
-            function closeNav() {
-                document.getElementById("nav").style.width = "0";
-            }
-        </script>
+    <script src="//code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     </body>
 </html>
