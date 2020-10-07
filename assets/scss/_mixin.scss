@@ -52,3 +52,46 @@
     font-size: 1.75rem;
   }
 }
+
+@mixin breakpoint($breakpoint) {
+  @if $breakpoint == 'sm-down' or $breakpoint == 'down'{
+    @media screen and (max-width: 576px){
+      @content;
+    }
+  }
+  @if $breakpoint == 'md-down'{
+    @media screen and (max-width: 768px){
+      @content;
+    }
+  }
+  @if $breakpoint == 'lg-down'{
+    @media screen and (max-width: 992px){
+      @content;
+    }
+  }
+  @if $breakpoint == 'sm'{
+    @media screen and (min-width: 576px){
+      @content;
+    }
+  }
+  @if $breakpoint == 'md'{
+    @media screen and (min-width: 768px){
+      @content;
+    }
+  }
+  @if $breakpoint == 'lg'{
+    @media screen and (min-width: 992px){
+      @content;
+    }
+  }
+  @if $breakpoint == 'xl'{
+    @media screen and (min-width: 1200px){
+      @content;
+    }
+  }
+  @if $breakpoint == 'xxl'{
+    @media screen and (min-width: 1440px){
+      @content;
+    }
+  }
+}

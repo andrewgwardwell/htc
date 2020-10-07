@@ -76,15 +76,20 @@ div.desc {
     margin-top: 4%;
 }
 
+.navbar{
+  height: 52px;
+}
+
 .navbar-collapse {
-    position: fixed;
-    width: 50%;
-    top: 52px;
-    right: 0;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-    height: 100%;
+  position: fixed;
+  width: 50%;
+  top: 52px;
+  right: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  height: 100%;
+
 }
 
 .navbar-collapse.collapsing {
@@ -229,7 +234,17 @@ button:focus {
 
 .footer {
   margin-top: 130px !important;
+  @include breakpoint('md'){
+    margin-top: 200px !important;
+  }
 }
 .card-link {
   font-size: 1.25rem;
+}
+
+.jumbotron{
+  @include breakpoint('md'){
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
 }
