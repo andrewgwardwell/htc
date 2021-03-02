@@ -47,11 +47,7 @@
 	}
 }
 
-@mixin interiorPage($color){
-  .step{
-    font-size: 1.75rem;
-  }
-}
+
 
 @mixin breakpoint($breakpoint) {
   @if $breakpoint == 'sm-down' or $breakpoint == 'down'{
@@ -94,4 +90,21 @@
       @content;
     }
   }
+}
+
+@mixin interiorPage($color){
+  .step{
+    font-size: 1.75rem;
+  }
+  @include breakpoint('lg-down') {
+    .card-title{
+      font-size: 3.5rem !important;
+    }
+    .inner-card{
+      .card-title{
+        font-size: 2.5rem !important;
+      }
+    }
+  }
+
 }
